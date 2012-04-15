@@ -1,0 +1,20 @@
+{
+  "name": "Pay4Me - eBay",
+  "version": "1.1",
+  "description": "Ask your friends to pay for you.",
+  "icons": { 
+  	"16": "icons/ebay_16.png",
+	"48": "icons/ebay_48.png",
+  	"128": "icons/ebay_128.jpg" },
+  "permissions": [
+  	"tabs",
+	"cookies",
+    "https://checkout.payments.ebay.com/*",
+    "https://*/*"
+  ],
+  "content_scripts": [ {
+    "matches": ["https://checkout.payments.ebay.com/*"], 
+    "js": ["scripts/pay4me_content.js"],
+    "all_frames": true
+  }]
+}
