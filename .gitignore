@@ -1,0 +1,11 @@
+*.class
+*.log
+*.log.?
+*.tlog
+logs
+temp_*
+*~
+.settings
+*/classes/*
+*.stackdump
+
