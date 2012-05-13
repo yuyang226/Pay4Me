@@ -9,11 +9,12 @@
   "permissions": [
   	"tabs",
 	"cookies",
+    "https://payments.ebay.com/*",
     "https://checkout.payments.ebay.com/*",
     "https://*/*"
   ],
   "content_scripts": [ {
-    "matches": ["https://checkout.payments.ebay.com/*"], 
+    "matches": ["https://payments.ebay.com/*", "https://checkout.payments.ebay.com/*"], 
     "js": ["scripts/pay4me_content.js"],
     "all_frames": true
   }]
