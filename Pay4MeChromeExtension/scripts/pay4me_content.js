@@ -32,19 +32,19 @@ function init(){
 function initCheckoutSection(elementId){
     console.log("[Func] initCheckoutSection");
     
-	//get the pay4me button
-	var btn = getPay4MeButton(elementId);
-	if (!btn) {
-	    console.error("Error: unable to create/find button to pay 4 me.");
-	    return;
-	}
-	
-	btn.addEventListener("click", pay4meListener);
+    // get the pay4me button
+    var btn = getPay4MeButton();
+    if (!btn) {
+        console.error("Error: unable to create/find button to pay 4 me.");
+        return;
+    }
+    
+    btn.addEventListener("click", pay4meListener);
 }
-	
+
 function pay4meListener(){
-	console.log("[Func] pay4meListener");
-	window.location.href = 'http://ebaypayforme.appspot.com/';
+    console.log("[Func] pay4meListener");
+    window.location.href = 'http://ebaypayforme.appspot.com/';
 }
 
 function getPay4MeButton(elementId){
