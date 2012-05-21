@@ -44,7 +44,9 @@ function initCheckoutSection(elementId){
 
 function pay4meListener(){
     console.log("[Func] pay4meListener");
-    window.location.href = 'http://ebaypayforme.appspot.com/';
+	//<a href="javascript:q=(document.location.href);void(open('http://example.com/submit.php?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));">
+    //window.location.href = 'http://ebaypayforme.appspot.com/';
+	window.open('http://ebaypayforme.appspot.com/','_blank','resizable,location,menubar,toolbar,scrollbars,status');
 }
 
 function getPay4MeButton(elementId){
