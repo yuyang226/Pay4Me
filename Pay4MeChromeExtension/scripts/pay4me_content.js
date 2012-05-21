@@ -33,7 +33,7 @@ function initCheckoutSection(elementId){
     console.log("[Func] initCheckoutSection");
     
     // get the pay4me button
-    var btn = getPay4MeButton();
+    var btn = getPay4MeButton(elementId);
     if (!btn) {
         console.error("Error: unable to create/find button to pay 4 me.");
         return;
