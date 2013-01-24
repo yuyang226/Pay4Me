@@ -28,7 +28,7 @@
   location_max_cache_age: 1800,
   send_on_app_start: 1,
   endpoint_is_stage: true,
-  endpoint_url: "https://www.stage2pph29.stage.paypal.com:10700/AccessControl/LogRiskMetadata",
+  endpoint_url: "https://www.stage2pph29.stage.paypal.com/AccessControl/LogRiskMetadata",
   internal_cache_max_age: 30,
   comp_timeout: 600
 }
