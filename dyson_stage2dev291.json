@@ -1,8 +1,5 @@
-Error: Parse error on line 1:
-{  conf_version: "1.0",
----^
-Expecting 'STRING', '}'
-conf_version: "1.0",
+{
+  conf_version: "1.0",
   async_update_time_interval: 1800,
   forced_full_update_time_interval: 3600,
   conf_refresh_time_interval: 86400,
